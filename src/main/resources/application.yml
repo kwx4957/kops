@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mariadb://${MariaDB_HOST}:${MariaDB_PORT}
+    username: ${MariaDB_USER}
+    password: ${MariaDB_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: 'create-drop'
+    properties:
+      format_sql: true
